@@ -37,5 +37,5 @@ class CommandTests(SimpleTestCase):
 
         self.assertEqual(patched_check.call_count, 6)
         #  Mock check method was called 6 times 2*3 until True is returned
-        patched_check.assert_called_once_with(databases=['default'])
+        patched_check.assert_called_with(databases=['default'])
 
